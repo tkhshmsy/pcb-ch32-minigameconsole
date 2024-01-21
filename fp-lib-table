@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "pcb-ch32-minigameconsole")(type "KiCad")(uri "${KIPRJMOD}/pcb-ch32-minigameconsole.pretty")(options "")(descr ""))
+)
