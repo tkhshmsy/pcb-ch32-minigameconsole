@@ -30,19 +30,32 @@ Private designed PCB for [CH32V003-GameConsole](https://github.com/wagiminator/C
 |R2|Resist 3k9|1||https://akizukidenshi.com/catalog/g/g116392/|
 |R3|Resist 20k|1|for test build, use 22k|https://akizukidenshi.com/catalog/g/g107842/ or https://akizukidenshi.com/catalog/g/g116223/|
 |R4, R7|Resist 2k|2||https://akizukidenshi.com/catalog/g/g116202/|
-|R5, R6|Resist 0|2|These are 'Dummy' to create resistance value of R1 / R2 in combination, if R1 / R2 is not available.||
+|R5, R6|Resist 0|2|These are 'Dummy' to create resistance value of R1 / R2 in combination. See 'Other set of resistors'||
 |R8|Resist 1k|1|see Errata|https://akizukidenshi.com/catalog/g/g116102/|
 |SW1|Slide switch|1||https://akizukidenshi.com/catalog/g/g115707/|
 |SW2-6|Push switch|5||https://akizukidenshi.com/catalog/g/g103647/|
 |J1|3 pins header/socket|1|SWD port|https://akizukidenshi.com/catalog/g/g115510/ or https://akizukidenshi.com/catalog/g/g110098/|
 |--|WCH-LinkE emulator|1|SWD/JTAG tool|https://akizukidenshi.com/catalog/g/g118065/|
 
+### Other set of resistors
+
+|Ref|Set 1(Original)|Set 2|
+|---|---------------|-----|
+|R1|8k2|4k7|
+|R2|3k9|2k2|
+|R3|20k|22k|
+|R4|2k|2k2|
+|R5|0|4k7|
+|R6|0|2k2|
+|R7|2k|2k2|
+|R8|1k|100|
+
 ## Errata
 * v0.1
   * Sometimes, The LEFT button (SW5) acts as the RIGHT button.
     * It seems to be due to poor analog wiring.
   * Sound too small
-    * It seems the limiting resist (R8) is too large.
+    * It seems the limiting resist (R8=1k) is too large.
 
 ## How to run
 on Linux,
